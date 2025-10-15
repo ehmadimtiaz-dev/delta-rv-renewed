@@ -74,7 +74,7 @@ const RVListings = () => {
                 </p>
 
                 <Button variant="default" size="lg" className="w-full" asChild>
-                  <a href="#contact">Check Availability</a>
+                  <a href="/contact">Check Availability</a>
                 </Button>
               </div>
             </Card>

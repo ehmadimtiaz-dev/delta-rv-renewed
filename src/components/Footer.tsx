@@ -19,28 +19,33 @@ const Footer = () => {
             <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <a href="/" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#rentals" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <a href="/rentals" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Our RVs
                 </a>
               </li>
               <li>
-                <a href="#why-choose" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Why Choose Us
+                <a href="/reviews" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Reviews
                 </a>
               </li>
               <li>
-                <a href="#faq" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <a href="/faq" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <a href="/contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Contact
+                </a>
+              </li>
+              <li>
+                <a href="/about" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  About
                 </a>
               </li>
             </ul>

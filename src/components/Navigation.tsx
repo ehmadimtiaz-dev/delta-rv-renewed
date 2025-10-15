@@ -7,11 +7,12 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "Rentals", href: "#rentals" },
-    { name: "Why Choose Us", href: "#why-choose" },
-    { name: "FAQ", href: "#faq" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "Rentals", href: "/rentals" },
+    { name: "Reviews", href: "/reviews" },
+    { name: "FAQ", href: "/faq" },
+    { name: "Contact", href: "/contact" },
+    { name: "About", href: "/about" },
   ];
 
   return (
@@ -19,7 +20,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center">
+          <a href="/" className="flex items-center">
             <img src={deltaLogo} alt="Delta RV Rentals" className="h-16 w-auto" />
           </a>
 
@@ -43,7 +44,7 @@ const Navigation = () => {
               <span className="font-semibold">(925) 276-5026</span>
             </a>
             <Button variant="default" size="lg" asChild>
-              <a href="#contact">Book Now</a>
+              <a href="/contact">Book Now</a>
             </Button>
           </div>
 
@@ -75,7 +76,7 @@ const Navigation = () => {
                 <span className="font-semibold">(925) 276-5026</span>
               </a>
               <Button variant="default" size="lg" asChild className="w-full">
-                <a href="#contact">Book Now</a>
+                <a href="/contact">Book Now</a>
               </Button>
             </div>
           </div>
