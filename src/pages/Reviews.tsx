@@ -83,7 +83,7 @@ const Reviews = () => {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
               {reviews.map((review, index) => (
-                <Card key={index} className="p-6 hover:shadow-xl transition-all duration-300 border-border flex flex-col">
+                <Card key={index} className="p-6 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border-border flex flex-col animate-fade-in group" style={{ animationDelay: `${index * 0.05}s` }}>
                   <div className="flex items-center justify-between mb-4">
                     <div>
                       <h3 className="font-bold text-lg">{review.name}</h3>
@@ -92,7 +92,7 @@ const Reviews = () => {
                   </div>
                   <div className="flex gap-1 mb-4">
                     {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-secondary text-secondary" />
+                      <Star key={i} className="h-5 w-5 fill-secondary text-secondary group-hover:scale-110 transition-transform" style={{ transitionDelay: `${i * 0.05}s` }} />
                     ))}
                   </div>
                   <p className="text-muted-foreground leading-relaxed flex-grow">

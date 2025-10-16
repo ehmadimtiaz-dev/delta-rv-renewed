@@ -26,7 +26,7 @@ const Rentals = () => {
         {/* What's Included Section */}
         <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
+            <div className="text-center mb-16 animate-fade-in">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
                 What's Included with Every Rental
               </h2>
@@ -50,7 +50,7 @@ const Rentals = () => {
                 "24/7 roadside assistance",
                 "Delivery options available"
               ].map((item, index) => (
-                <Card key={index} className="p-4 flex items-start gap-3 border-border">
+                <Card key={index} className="p-4 flex items-start gap-3 border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{ animationDelay: `${index * 0.05}s` }}>
                   <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="h-4 w-4 text-primary" />
                   </div>

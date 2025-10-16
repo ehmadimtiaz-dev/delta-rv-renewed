@@ -26,7 +26,7 @@ const About = () => {
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-              <div>
+              <div className="animate-fade-in">
                 <h2 className="text-4xl font-bold mb-6">Our Story</h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
@@ -50,11 +50,11 @@ const About = () => {
                   </p>
                 </div>
               </div>
-              <div className="rounded-lg overflow-hidden shadow-xl">
+              <div className="rounded-lg overflow-hidden shadow-xl animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <img 
                   src={familyCamping} 
-                  alt="Family enjoying RV camping" 
-                  className="w-full h-full object-cover"
+                  alt="Happy family enjoying outdoor camping experience next to Delta RV trailer at lakeside campsite" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
             </div>
